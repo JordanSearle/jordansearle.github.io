@@ -13,6 +13,7 @@
     padding: 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     font-size: 35px;
+    position: sticky;
   }
   header a{
     text-transform: uppercase;
@@ -162,7 +163,7 @@
     border: 2px solid black;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 485px;
+    height: 471px;
     background-color: #1dcaff;
     text-align: center;
     color: white;
@@ -170,7 +171,7 @@
     box-shadow: 2px 2px 2px #888888;
   }
   #myTwitter ul::-webkit-scrollbar {
-      width: 15px;
+      width: 11px;
   }
 
   #myTwitter ul::-webkit-scrollbar-track {
@@ -178,16 +179,17 @@
   }
 
   #myTwitter ul::-webkit-scrollbar-thumb {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+      background: #CCCCCC;
   }
   #myTwitter li{
-    margin-bottom: 5px;
+    margin: 3px;
     padding-bottom: 5px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
     background-color: #f3f3f3;
     border-radius: 5px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.2);
   }
+
   .user{
       display: block;
       margin-left: auto;
@@ -198,12 +200,10 @@
     text-decoration: none;
     color: black;
   }
-  a:visited{
-    color: black;
-  }
   .user img{
     border-radius: 50%;
-    width: 50%
+    width: 50%;
+    border: 2px solid rgba(0,0,0,0.8)
   }
   #myTwitter ul{
     border-top: 2px solid rgba(0,0,0,0.5);
@@ -217,14 +217,22 @@
     list-style-type: none;
     background-color: white;
     text-shadow: 0px 0px 0px black;
-  }
-  .twitter_reply_icon, .twitter_fav_icon, .twitter_retweet_icon{
-    color: black;
-  }
-  .twitter_reply_icon:hover, .twitter_fav_icon:hover, .twitter_retweet_icon:hover{
+
+  }.twitter_fav_icon, .twitter_retweet_icon{
     color: #1dcaff;
+    padding: 10px;
+    line-height: 15px;
+    text-shadow: 1px 1px 1px #4d4d4d;
+
+  }.twitter_fav_icon:hover, .twitter_retweet_icon:hover{
+    font-size: 27px;
+    text-shadow: 2px 1px 2px #4d4d4d;
   }
   .socialGridLeft{
+    grid-column: 2 / span 8;
+    grid-row: 3;
+  }
+  .socialGridRight{
     grid-column: 2 / span 8;
     grid-row: 2;
   }
@@ -232,7 +240,7 @@
 @media screen and (min-width: 1000px) {
   header{
     position: fixed;
-    background-color: rgba(55, 55, 55, 0.8);
+    background-color: rgba(55, 55, 55, 0.9);
   }
 
   header a{
@@ -258,16 +266,22 @@
   display:block;
   grid-column: 7;
   grid-row: 1;
+  padding: 0px;
+  border: 0px;
 }
 .head2{
   display: block;
   grid-column: 8;
   grid-row: 1;
+  padding: 0px;
+  border: 0px;
 }
 .head3{
   display: block;
   grid-column: 9;
   grid-row: 1;
+  padding: 0px;
+  border: 0px;
 }
 .mobileDropdown{
   display: none;
@@ -341,6 +355,10 @@
   grid-column: 2 / span 2;
   grid-row: 2;
 }
+.socialGridRight{
+  grid-column: 5 / span 5;
+  grid-row: 2;
+}
 .gridtest img{
   width: 60%;
   border-radius: 50%;
@@ -360,5 +378,9 @@
   grid-row: 4;
   grid-column: 4 span 2;
   height: 60px;
+}
+.twitterBorder iframe{
+border-top: 2px solid rgba(0,0,0,0.5);
+border-style: none;
 }
 }

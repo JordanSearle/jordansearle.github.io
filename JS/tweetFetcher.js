@@ -54,9 +54,8 @@ op+='<p class="tweet">'+strip(tweets[n].innerHTML)+'</p>';if(printTime){if(perma
 times[n].getAttribute('aria-label')+'</p>';}}}else{if(tweets[n].textContent){if(printUser){op+='<p class="user">'+authors[n].textContent+'</p>';}
 op+='<p class="tweet">'+tweets[n].textContent+'</p>';if(printTime){op+='<p class="timePosted">'+times[n].textContent+'</p>';}}else{if(printUser){op+='<p class="user">'+authors[n].textContent+'</p>';}
 op+='<p class="tweet">'+tweets[n].textContent+'</p>';if(printTime){op+='<p class="timePosted">'+times[n].textContent+'</p>';}}}
-if(showInteractionLinks){op+='<p class="interact"><a href="https://twitter.com/intent/'+'tweet?in_reply_to='+tids[n]+'" class="twitter_reply_icon"'+
-(targetBlank?' target="_blank">':'>')+'<h2><i class="fas fa-reply"></i></a><a href="https://twitter.com/intent/retweet?'+'tweet_id='+tids[n]+'" class="twitter_retweet_icon"'+
-(targetBlank?' target="_blank">':'>')+'<i class="fas fa-retweet"></i></a>'+'<a href="https://twitter.com/intent/favorite?tweet_id='+
+if(showInteractionLinks){op+='<p class="interact"><h2><a href="https://twitter.com/intent/retweet?'+'tweet_id='+tids[n]+'" class="twitter_retweet_icon"'+
+(targetBlank?' target="_blank">':'>')+'<i class="fas fa-retweet"></i>'+'</a>'+'<a href="https://twitter.com/intent/favorite?tweet_id='+
 tids[n]+'"class="twitter_fav_icon"'+
 (targetBlank?' target="_blank">':'>')+'<i class="fas fa-heart"></i></h2></a></p>';}
 if(showImages&&images[n]!==undefined&&extractImageUrl(images[n])!==undefined){op+='<div class="media">'+'<img src="'+extractImageUrl(images[n])+'" alt="Image from tweet" />'+'</div>';}

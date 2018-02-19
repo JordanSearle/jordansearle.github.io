@@ -43,14 +43,15 @@
     border-style:double;
   }
   .anchor {
-    padding-top: 60px;
-    margin-top: -60px
+    padding-top: 70px;
+    margin-top: -70px
 }
 
   .gridHeader{
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       grid-row-gap: 0px;
+      height: auto;
       overflow: hidden;
   }
   .Background{
@@ -72,9 +73,10 @@
   }
   .col-6{
     grid-row: 1;
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 9;
     text-align: left;
     overflow: hidden;
+    height: 50px;
   }
   .mobileDropdown{
     grid-row: 1;
@@ -121,13 +123,13 @@
     color: white;
   }
   .social{
-    background-color: rgba(55, 55, 55, 0.5);
-    position:sticky;
+    background-color: rgba(55, 55, 55, 0.8);
+    position: sticky;
     bottom: 0;
     width: 100%;
-    height: 70px;
+    height: auto;
     text-align: center;
-    vertical-align: top;
+    vertical-align: bottom;
   }
   .social ul{
     list-style: none;
@@ -140,7 +142,7 @@
 		display: inline-block;
     padding-left: 10%;
     padding-right: 10%;
-
+    padding-top: auto;
 	}
   .social li a{
     display: block;
@@ -236,10 +238,22 @@
     grid-column: 2 / span 8;
     grid-row: 2;
   }
+  .linkColour{
+    color: white;
+  }
+  footer ul{
+    display: none;
+  }
+  header ul li {
+		display: inline;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: auto;
+	}
 
 @media screen and (min-width: 1000px) {
   header{
-    position: fixed;
+    position: sticky;
     background-color: rgba(55, 55, 55, 0.9);
   }
 
@@ -251,6 +265,7 @@
   }
 .headerColumn{
   display: grid;
+  font-size: 30px;
 }
 .alignCenter{
   justify-content: center;
@@ -258,9 +273,11 @@
   text-align: center;
 }
 .col-6{
-  grid-column: 2 / span 2;
+  display: block;
+  grid-column: 2 / span 4;
+  grid-row: 1;
   text-align: center;
-  font-size: 50px;
+  height: auto;
 }
 .head1{
   display:block;
@@ -297,10 +314,9 @@
   padding: 8px;
   padding-left: 13px;
   top: 30%;
-  right: -9px;
+  right: -5px;
   height: 220px;
-  width: 30px;
-  line-height: 50px;
+  width: 60px;
 }
 
 .socialList {
@@ -319,11 +335,9 @@
 }
 
 .social:hover {
-  width: 50px;
-  transform:rotate(-2deg);
+  width: 70px;
   background-color: rgba(55, 55, 55, 0.8);
   font-size: 25px;
-  line-height: 10px;
 }
 .social ul{
   list-style: none;
@@ -335,7 +349,7 @@
 .social ul li {
   display: block;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 10px;
 }
 .bodyElements img{
   display: block;
@@ -383,4 +397,25 @@
 border-top: 2px solid rgba(0,0,0,0.5);
 border-style: none;
 }
+footer ul{
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+footer ul li{
+display: inline-block;
+padding-left: 10%;
+padding-right: 10%;
+font-size: 100px;
+}
+.orange{
+  color: #FF9516;
+}
+.blue{
+  color: #0048E7;
+}
+.mySlides {display:none;}
 }

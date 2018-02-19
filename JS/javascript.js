@@ -22,7 +22,7 @@ function mobileResize(){
   dropdowns.forEach(dropdown => dropdown.removeAttribute("style", "display:none"));
   x = 1;
 }
-}
+};
 //Mobile Dropdown Menu
 function mobileDropDown(){
   if(x == 0){
@@ -33,4 +33,31 @@ function mobileDropDown(){
     dropdowns.forEach(dropdown => dropdown.setAttribute("style", "display:none"));
     x = 0;
   }
+};
+//Link Animations
+const links = document.querySelectorAll('.link');
+links.forEach(link => link.addEventListener('mouseenter', addBounce));
+links.forEach(link => link.addEventListener('animationend', removeBounce));
+function addBounce(e){
+  this.classList.add('animated','tada');
+};
+function removeBounce(e){
+  this.classList.remove('animated','tada');
+};
+//slideShow
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var timeout
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    timeout = 10000;
+    setTimeout(carousel, timeout);
 }

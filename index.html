@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Rubik" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <link href="CSS/Styles.css" rel="stylesheet">
   <title>Jordan Searle</title> <!--placeholder-->
 </head>
@@ -14,16 +17,20 @@
     <div class="headerColumn col-6">
       <a>Jordan Searle</a>
     </div>
-      <div class="headerColumn head1 alignCenter headShown"><a href="#projects">PROJECTS</a></div>
-      <div class="headerColumn head2 alignCenter headShown"><a href="#about">ABOUT</a></div>
-      <div class="headerColumn head3 alignCenter headShown"><a href="#social">SOCIAL</a></div>
+      <div class="headerColumn head1 alignCenter"><a href="#projects">PROJECTS</a></div>
+      <div class="headerColumn head2 alignCenter"><a href="#about">ABOUT</a></div>
+      <div class="headerColumn head3 alignCenter"><a href="#social">SOCIAL</a></div>
       <div class="mobileDropdown" onclick="mobileDropDown()"><a><i class="fas fa-bars"></i></a></div>
     </div>
   </header>
-  <section class="bodySection"> <!--placeholder write name here-->
-    <div class="bodyElements" id="projects">
-      <img src="Assets/Image1.jpeg">
+  <section> <!--Project images-->
+    <div class="bodyElements bodyGrid anchor" id="projects">
+<div class="gridtestright">
+    <div class="mySlides" id="image1"><img src="Assets/Image1.jpeg"></div>
+    <div class="mySlides" id="image2"><img src="Assets/pexels-photo-101401.jpeg"></div>
+    <div class="mySlides" id="image3"><img src="Assets/Image1.jpeg"></div>
   </div>
+</div>
   </section>
   <section class="bodySection anchor" id="about"> <!--About Me-->
     <div class="gridBody">
@@ -65,26 +72,33 @@
       </div>
       <div class="socialGridLeft">
         <div class="twitterBorder">
-          <h1><i class="fab fa-twitter"></i> Kernow_Jordan</h1>
+          <h1><a href="https://twitter.com/Kernow_jordan" target="_blank" class="linkColour"><i class="fab fa-twitter linkColour"></i> Kernow_Jordan</a></h1>
         <div id="myTwitter">
       </div>
       </div>
     </div>
     <div class="socialGridRight twitterBorder">
-      <h1><i class="fab fa-wordpress-simple"></i> My Blog</h1>
+      <h1><a href="https://jordansearle97.wordpress.com/" target="_blank" class="linkColour"><i class="fab fa-wordpress-simple "></i> My Blog</a></h1>
       <iframe src="https://feed.mikle.com/widget/v2/65396/" height="450px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
     </div>
 <div class="spacerBottom">
     </div>
     </div>
   <footer>
+    <div>
+      <ul>
+        <li><i class="fab fa-html5 orange"></i></li>
+        <li><i class="fab fa-js"></i></li>
+        <li><i class="fab fa-css3-alt blue"></i></li>
+      </ul>
+    </div>
   </footer>
   <div class="social">
     <div class="socialList">
     <ul>
-        <li><a target="_blank" href="http://www.facebook.com"><h1><i class="fab fa-facebook-square"></i></h1></a></li>
-        <li><a target="_blank" href="http://www.twitter.com"><h1><i class="fab fa-twitter-square"></i></h1></a></li>
-        <li><a target="_blank"href="http://www.linkedin.com"><h1><i class="fab fa-linkedin"></i></i></h1></a></li>
+        <li class="link"><a target="_blank" href="http://www.facebook.com"><h1><i class="fab fa-facebook-square"></i></h1></a></li>
+        <li class="link"><a target="_blank" href="http://www.twitter.com"><h1><i class="fab fa-twitter-square"></i></h1></a></li>
+        <li class="link"><a target="_blank"href="http://www.linkedin.com"><h1><i class="fab fa-linkedin"></i></i></h1></a></li>
     </ul>
   </div>
   </div>

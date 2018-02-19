@@ -1,0 +1,421 @@
+  body{
+    background-color: #F6F6F6;
+    margin: 0;
+  }
+  p{
+    font-family: 'Raleway', sans-serif;
+  }
+  header{
+    background-color: rgba(55, 55, 55, 1);
+    left: 0px;
+    right:0px;
+    top: 0px;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 35px;
+    position: sticky;
+  }
+  header a{
+    text-transform: uppercase;
+    font-weight:normal;
+  }
+  header a:visited{
+    color: darkGrey;
+  }
+  .bodyElements{
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    color: black;
+  }
+  .bodyElements img{
+      border-style: none;
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+
+  }
+  hr{
+    padding-top: 0px;
+    margin-top: 0px;
+    border-width: 1px;
+    border-color: black;
+    border-style:double;
+  }
+  .anchor {
+    padding-top: 70px;
+    margin-top: -70px
+}
+
+  .gridHeader{
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-row-gap: 0px;
+      height: auto;
+      overflow: hidden;
+  }
+  .Background{
+        margin-top: 60px;
+  }
+  .gridBody{
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-gap: 10px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+
+  }
+  .bodyGrid{
+    grid-row: 2/ span 2;
+    grid-column: 1 / span 10;
+    color: darkGrey;
+  }
+  .col-6{
+    grid-row: 1;
+    grid-column: 1 / span 9;
+    text-align: left;
+    overflow: hidden;
+    height: 50px;
+  }
+  .mobileDropdown{
+    grid-row: 1;
+    grid-column: 10;
+    text-align: center;
+  }
+  .head1{
+    padding: 10px;
+    padding-left: 0px;
+    grid-row: 2;
+    grid-column: 1 / span 10;
+    display: none;
+    border-top: 2px solid black;
+  }
+  .head2{
+    padding: 10px;
+    padding-left: 0px;
+    grid-column: 1 / span 10;
+    grid-row: 3;
+    display: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .head3{
+    padding: 10px;
+    padding-left: 0px;
+    grid-column: 1 / span 10;
+    grid-row: 4;
+    display: none;
+    border-bottom: 2px solid black;
+  }
+
+
+  h1, h2, h3 ,h4, a{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+  }
+  header a{
+    text-decoration: none;
+    color: darkGrey;
+    font-size: 40px;
+  }
+  header a:hover{
+    color: white;
+  }
+  .social{
+    background-color: rgba(55, 55, 55, 0.8);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    vertical-align: bottom;
+  }
+  .social ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+	.social ul li {
+		display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: auto;
+	}
+  .social li a{
+    display: block;
+    color: darkGrey;
+    text-align: center;
+    text-decoration: none;
+  }
+  .gridtest{
+    grid-column: 3 / span 6;
+    grid-row: 1;
+  }
+  .gridtestright{
+    margin-top: 30px;
+    grid-column: 3 / span 6;
+    grid-row: 2/ span 3;
+  }
+
+  .twitterBorder{
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 471px;
+    background-color: #1dcaff;
+    text-align: center;
+    color: white;
+    text-shadow: 1px -1px 1px black;
+    box-shadow: 2px 2px 2px #888888;
+  }
+  #myTwitter ul::-webkit-scrollbar {
+      width: 11px;
+  }
+
+  #myTwitter ul::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+
+  #myTwitter ul::-webkit-scrollbar-thumb {
+      background: #CCCCCC;
+  }
+  #myTwitter li{
+    margin: 3px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.2);
+  }
+
+  .user{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .user img{
+    border-radius: 50%;
+    width: 50%;
+    border: 2px solid rgba(0,0,0,0.8)
+  }
+  #myTwitter ul{
+    border-top: 2px solid rgba(0,0,0,0.5);
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 412px;
+    color: black;
+    padding-left: 0px;
+    list-style-type: none;
+    background-color: white;
+    text-shadow: 0px 0px 0px black;
+
+  }.twitter_fav_icon, .twitter_retweet_icon{
+    color: #1dcaff;
+    padding: 10px;
+    line-height: 15px;
+    text-shadow: 1px 1px 1px #4d4d4d;
+
+  }.twitter_fav_icon:hover, .twitter_retweet_icon:hover{
+    font-size: 27px;
+    text-shadow: 2px 1px 2px #4d4d4d;
+  }
+  .socialGridLeft{
+    grid-column: 2 / span 8;
+    grid-row: 3;
+  }
+  .socialGridRight{
+    grid-column: 2 / span 8;
+    grid-row: 2;
+  }
+  .linkColour{
+    color: white;
+  }
+  footer ul{
+    display: none;
+  }
+  header ul li {
+		display: inline;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: auto;
+	}
+
+@media screen and (min-width: 1000px) {
+  header{
+    position: sticky;
+    background-color: rgba(55, 55, 55, 0.9);
+  }
+
+  header a{
+    text-decoration: none;
+    color: darkGrey;
+    font-size: 30px;
+    text-shadow: 0px 1px 0px rgba(0,0,0,1);
+  }
+.headerColumn{
+  display: grid;
+  font-size: 30px;
+}
+.alignCenter{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.col-6{
+  display: block;
+  grid-column: 2 / span 4;
+  grid-row: 1;
+  text-align: center;
+  height: auto;
+}
+.head1{
+  display:block;
+  grid-column: 7;
+  grid-row: 1;
+  padding: 0px;
+  border: 0px;
+}
+.head2{
+  display: block;
+  grid-column: 8;
+  grid-row: 1;
+  padding: 0px;
+  border: 0px;
+}
+.head3{
+  display: block;
+  grid-column: 9;
+  grid-row: 1;
+  padding: 0px;
+  border: 0px;
+}
+.mobileDropdown{
+  display: none;
+}
+
+.social{
+  position: fixed;
+  display: block;
+  text-align: left;
+  background-color: rgba(55, 55, 55, 0.8);
+  transform:rotate(-3deg);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  padding-left: 13px;
+  top: 30%;
+  right: -5px;
+  height: 220px;
+  width: 60px;
+}
+
+.socialList {
+  transform:rotate(3deg);
+}
+.social a i{
+  color: darkGrey;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0px 2px 0px black;
+}
+.social i:hover{
+  color: white;
+  text-decoration: none;
+
+}
+
+.social:hover {
+  width: 70px;
+  background-color: rgba(55, 55, 55, 0.8);
+  font-size: 25px;
+}
+.social ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.social ul li {
+  display: block;
+  padding-left: 0;
+  padding-right: 10px;
+}
+.bodyElements img{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+.bodyGrid{
+  grid-column: 1 / span 10;
+}
+.gridtest{
+  grid-column: 5 / span 2;
+  grid-row: 2;
+}
+.socialGridLeft{
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+.socialGridRight{
+  grid-column: 5 / span 5;
+  grid-row: 2;
+}
+.gridtest img{
+  width: 60%;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,1);
+}
+.gridtestright{
+  margin-top: 0px;
+  grid-column: 4 / span 4;
+  grid-row: 3;
+}
+.spacerTop{
+  grid-row: 1;
+  grid-column: 4 span 2;
+  height: 60px;
+}
+.spacerBottom{
+  grid-row: 4;
+  grid-column: 4 span 2;
+  height: 60px;
+}
+.twitterBorder iframe{
+border-top: 2px solid rgba(0,0,0,0.5);
+border-style: none;
+}
+footer ul{
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+footer ul li{
+display: inline-block;
+padding-left: 10%;
+padding-right: 10%;
+font-size: 100px;
+}
+.orange{
+  color: #FF9516;
+}
+.blue{
+  color: #0048E7;
+}
+.mySlides {display:none;}
+}

@@ -6,20 +6,18 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Rubik" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
   <link href="CSS/Styles.css" rel="stylesheet">
-  <title>Jordan Searle</title> <!--placeholder-->
+  <title>Jordan Searle</title> <!--Title-->
 </head>
-<body>
+<body class="animated fadeIn">
   <header >
     <div class="gridHeader" >
     <div class="headerColumn col-6">
       <a>Jordan Searle</a>
     </div>
-      <div class="headerColumn head1 alignCenter"><a href="#projects">PROJECTS</a></div>
-      <div class="headerColumn head2 alignCenter"><a href="#about">ABOUT</a></div>
-      <div class="headerColumn head3 alignCenter"><a href="#social">SOCIAL</a></div>
+      <div class="headerColumn head1 alignCenter headShown"><a href="#projects">PROJECTS</a></div>
+      <div class="headerColumn head2 alignCenter headShown"><a href="#about">ABOUT</a></div>
+      <div class="headerColumn head3 alignCenter headShown"><a href="#social">SOCIAL</a></div>
       <div class="mobileDropdown" onclick="mobileDropDown()"><a><i class="fas fa-bars"></i></a></div>
     </div>
   </header>
@@ -32,7 +30,7 @@
   </div>
 </div>
   </section>
-  <section class="bodySection anchor" id="about"> <!--About Me-->
+  <section class="bodySection anchor eee" id="about"> <!--About Me-->
     <div class="gridBody">
     <div class="headerColumn bodyGrid bodyElements">
       <div class="headerColumn bodyRow bodyElements">
@@ -46,16 +44,32 @@
       <div class="bodyElements gridtest">
       <img src="Assets/Profile.jpg" >
     </div>
-    <div class="bodyElements gridtestright">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-         ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.</p>
+    <div class="bodyElements gridtestright" id="insert">
+    <h2>My Name Is Jordan and I</h2>
+    <h3><p class="typewriter line-1 anim-typewriter">Front End Develop</p>
+      <p class="typewriter line-2 anim-typewriter2">Build Systems</p>
+      <p class="typewriter line-3 anim-typewriter3">Code</p></h3>
+      <form action="https://formspree.io/jordan.searle-3@students.plymouth.ac.uk" method="POST">
+          <div class="form-group">
+            <input class="form-control" id="name" type="text" placeholder="Name" required="required">
+          </div>
+          <div class="form-group">
+              <input class="form-control" id="email" type="email" placeholder="Email Address" required="required">
+          </div>
+          <div class="form-group">
+              <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"></textarea>
+          </div>
+          <div class="form-group">
+            <button  class="form-control btn-primay" type="submit">Send</button>
+          </div>
+        </form>
     </div>
-    <div class="spacerBottom">
+    <div class="aboutBottom">
+        <ul>
+          <li><i class="fab fa-html5 orange"></i></li>
+          <li><i class="fas fa-code"></i></li>
+          <li><i class="fab fa-css3-alt blue"></i></li>
+        </ul>
     </div>
     </div>
   </section>
@@ -72,36 +86,33 @@
       </div>
       <div class="socialGridLeft">
         <div class="twitterBorder">
-          <h1><a href="https://twitter.com/Kernow_jordan" target="_blank" class="linkColour"><i class="fab fa-twitter linkColour"></i> Kernow_Jordan</a></h1>
+          <h2><a href="https://twitter.com/Kernow_jordan" target="_blank" class="linkColour"><i class="fab fa-twitter linkColour"></i> Kernow_Jordan</a></h2>
         <div id="myTwitter">
       </div>
       </div>
     </div>
     <div class="socialGridRight twitterBorder">
-      <h1><a href="https://jordansearle97.wordpress.com/" target="_blank" class="linkColour"><i class="fab fa-wordpress-simple "></i> My Blog</a></h1>
+      <h2><a href="https://jordansearle97.wordpress.com/" target="_blank" class="linkColour"><i class="fab fa-wordpress-simple "></i> My Blog</a></h2>
       <iframe src="https://feed.mikle.com/widget/v2/65396/" height="450px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
     </div>
 <div class="spacerBottom">
     </div>
     </div>
-  <footer>
-    <div>
-      <ul>
-        <li><i class="fab fa-html5 orange"></i></li>
-        <li><i class="fab fa-js"></i></li>
-        <li><i class="fab fa-css3-alt blue"></i></li>
-      </ul>
-    </div>
-  </footer>
+  </section>
   <div class="social">
     <div class="socialList">
     <ul>
-        <li class="link"><a target="_blank" href="http://www.facebook.com"><h1><i class="fab fa-facebook-square"></i></h1></a></li>
-        <li class="link"><a target="_blank" href="http://www.twitter.com"><h1><i class="fab fa-twitter-square"></i></h1></a></li>
-        <li class="link"><a target="_blank"href="http://www.linkedin.com"><h1><i class="fab fa-linkedin"></i></i></h1></a></li>
+        <li class="link"><a target="_blank" href="https://github.com/JordanSearle"><h1><i class="fab fa-github-square"></i></h1></a></li>
+        <li class="link"><a target="_blank" href="https://twitter.com/Kernow_jordan"><h1><i class="fab fa-twitter-square"></i></h1></a></li>
+        <li class="link"><a target="_blank" href="https://www.linkedin.com/in/jordansearle97/"><h1><i class="fab fa-linkedin"></i></i></h1></a></li>
     </ul>
   </div>
   </div>
+  <footer>
+    <div>
+      <h4>@ Jordan Searle 2018</h4>
+    </div>
+  </footer>
   <script type="text/javascript" src="JS/tweetFetcher.js"></script>
   <script type="text/javascript" src="JS/javascript.js"></script>
 </body>

@@ -1,7 +1,7 @@
 // A simple example to get my latest tweet and write to a HTML element with
 // id "example1". Also automatically hyperlinks URLS and user mentions and
 // hashtags.
-var x = 0;
+var drop = 0;
 const dropdowns = document.querySelectorAll('.headShown');
 //Twitter Config
 var configProfile = {
@@ -20,30 +20,56 @@ window.addEventListener("resize", mobileResize);
 function mobileResize(){
   if(window.innerWidth > 1000){
   dropdowns.forEach(dropdown => dropdown.removeAttribute("style", "display:none"));
-  x = 1;
+  drop = 1;
 }
 };
 //Mobile Dropdown Menu
 function mobileDropDown(){
-  if(x == 0){
+  if(drop == 0){
     dropdowns.forEach(dropdown => dropdown.setAttribute("style", "display:block"));
-    x = 1;
+    console.log(drop);
+    drop = 1;
   }
   else{
     dropdowns.forEach(dropdown => dropdown.setAttribute("style", "display:none"));
-    x = 0;
+    drop = 0;
   }
-};
-//Link Animations
+}
+//Animations
 const links = document.querySelectorAll('.link');
-links.forEach(link => link.addEventListener('mouseenter', addBounce));
+links.forEach(link => link.addEventListener('mouseenter', addAnimation));
 links.forEach(link => link.addEventListener('animationend', removeBounce));
-function addBounce(e){
+function addAnimation(e){
   this.classList.add('animated','tada');
 };
 function removeBounce(e){
   this.classList.remove('animated','tada');
 };
+const body = document.querySelector('body');
+body.addEventListener('animationend', removeLoadIn);
+function removeLoadIn(e){
+  this.classList.remove('animated','fadeIn');
+}
+var slideIndexs = 0;
+carouselText();
+
+function carouselText() {
+    var i;
+    var timeout
+    var x = document.getElementsByClassName("typewriter");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    slideIndexs++;
+    if (slideIndexs > x.length) {slideIndexs = 1}
+    x[slideIndexs-1].style.display = "block";
+    timeout = 10000;
+    setTimeout(carouselText, timeout);
+}
+
+
+
+
 //slideShow
 var slideIndex = 0;
 carousel();

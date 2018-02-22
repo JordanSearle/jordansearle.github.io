@@ -163,7 +163,6 @@
     grid-column: 2 / span 8;
     grid-row: 2;
   }
-
   .twitterBorder{
     overflow: hidden;
     border: 2px solid black;

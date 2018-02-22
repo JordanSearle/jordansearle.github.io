@@ -23,12 +23,23 @@
   </header>
   <section> <!--Project images-->
     <div class="bodyElements bodyGrid anchor" id="projects">
-<div class="gridtestright e6e6e6">
-    <div class="mySlides animated bounceInLeft" id="image1"><img src="Assets/Image1.jpeg"></div>
-    <div class="mySlides animated bounceInLeft" id="image2"><img src="Assets/pexels-photo-101401.jpeg"></div>
-    <div class="mySlides animated bounceInLeft" id="image3"><img src="Assets/Image1.jpeg"></div>
-  </div>
-</div>
+<div class="gridtestright e6e6e6 imageHover">
+    <div class="mySlides animated bounceInLeft" id="image1"><img src="Assets/Image1.jpeg">
+
+      <div class="text-block none"><img src="Assets/Image1.jpeg"><a href="#" onclick="setval(2)"><img class="blur" src="Assets/pexels-photo-101401.jpeg"></a>
+        <a href="#" onclick="setval(3)"><img class="blur" src="Assets/Image1.jpeg"></a></div>
+
+    </div>
+    <div class="mySlides animated bounceInLeft" id="image2"><img src="Assets/pexels-photo-101401.jpeg">
+
+      <div class="text-block none"><a href="#" onclick="setval(1)"><img class="blur" src="Assets/Image1.jpeg"></a><img src="Assets/pexels-photo-101401.jpeg">
+        <a href="#" onclick="setval(3)"><img class="blur" src="Assets/Image2.jpeg"></a></div>
+
+      </div>
+    <div class="mySlides  animated bounceInLeft" id="image3"><img src="Assets/Image2.jpeg">
+      <div class="text-block none"><a href="#" onclick="setval(1)"><img class="blur" src="Assets/Image1.jpeg"></a><a href="#" onclick="setval(2)"><img class="blur" src="Assets/pexels-photo-101401.jpeg"></a>
+        <img src="Assets/Image2.jpeg"></div>
+    </div>
   </section>
   <section class="bodySection eee" id="about"> <!--About Me-->
     <div class="gridBody">

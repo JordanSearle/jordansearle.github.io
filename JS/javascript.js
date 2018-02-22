@@ -32,11 +32,14 @@ function mobileDropDown(){
 //Animations
 const links = document.querySelectorAll('.link');
 links.forEach(link => link.addEventListener('mouseenter', addAnimation));
-links.forEach(link => link.addEventListener('animationend', removeBounce));
+links.forEach(link => link.addEventListener('animationend', removeAnimation));
+const blured = document.querySelectorAll('.blur');
+blured.forEach(blur => blur.addEventListener('mouseenter', addAnimation));
+blured.forEach(blur => blur.addEventListener('animationend', removeAnimation));
 function addAnimation(e){
   this.classList.add('animated','tada');
 };
-function removeBounce(e){
+function removeAnimation(e){
   this.classList.remove('animated','tada');
 };
 const body = document.querySelector('body');
@@ -62,22 +65,44 @@ function carouselText() {
 }
 
 
-
+function mouseOn() {
+    if(window.innerWidth > 768){
+  displays[slideIndex-1].style.display = "block";
+}}
+function mouseOff() {
+  if(window.innerWidth > 768){
+  displays[slideIndex-1].style.display = "none";
+}}
+var j;
 
 //slideShow
+function setval(varval)
+{
+	slideIndex = varval;
+  slideChange();
+}
+
+const slideDiv = document.querySelector('.imageHover');
+slideDiv.addEventListener('mouseenter', mouseOn);
+slideDiv.addEventListener('mouseleave', mouseOff);
+
+var x = document.getElementsByClassName("mySlides");
+var displays = document.getElementsByClassName("none");
 var slideIndex = 0;
 carousel();
+var timeout = 10000;
 
 function carousel() {
-    var i;
-    var timeout
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    timeout = 10000;
-    setTimeout(carousel, timeout);
+    slideChange();
 }
+function slideChange() {
+  window.clearTimeout(timeoutHandle);
+  for (j = 0; j < x.length; j++) {
+      x[j].style.display = "none";
+    }
+  x[slideIndex-1].style.display = "block";
+  timeoutHandle = window.setTimeout(carousel, timeout);
+}
+var timeoutHandle = window.setTimeout(carousel, timeout);

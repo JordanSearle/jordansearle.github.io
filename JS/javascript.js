@@ -1,8 +1,7 @@
 // A simple example to get my latest tweet and write to a HTML element with
 // id "example1". Also automatically hyperlinks URLS and user mentions and
 // hashtags.
-var drop = 0;
-const dropdowns = document.querySelectorAll('.headShown');
+
 //Twitter Config
 var configProfile = {
   "profile": {"screenName": 'Kernow_jordan'},
@@ -20,20 +19,15 @@ window.addEventListener("resize", mobileResize);
 function mobileResize(){
   if(window.innerWidth > 1000){
   dropdowns.forEach(dropdown => dropdown.removeAttribute("style", "display:none"));
-  drop = 1;
 }
 };
 //Mobile Dropdown Menu
+const dropdowns = document.querySelectorAll('.headShown');
 function mobileDropDown(){
-  if(drop == 0){
-    dropdowns.forEach(dropdown => dropdown.setAttribute("style", "display:block"));
-    console.log(drop);
-    drop = 1;
-  }
+  if(dropdowns[1].style.display == "none"){
+    dropdowns.forEach(dropdown => dropdown.setAttribute("style", "display:block"));}
   else{
-    dropdowns.forEach(dropdown => dropdown.setAttribute("style", "display:none"));
-    drop = 0;
-  }
+    dropdowns.forEach(dropdown => dropdown.setAttribute("style", "display:none"));}
 }
 //Animations
 const links = document.querySelectorAll('.link');

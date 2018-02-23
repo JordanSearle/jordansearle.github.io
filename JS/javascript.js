@@ -33,9 +33,6 @@ function mobileDropDown(){
 const links = document.querySelectorAll('.link');
 links.forEach(link => link.addEventListener('mouseenter', addAnimation));
 links.forEach(link => link.addEventListener('animationend', removeAnimation));
-const blured = document.querySelectorAll('.blur');
-blured.forEach(blur => blur.addEventListener('mouseenter', addAnimation));
-blured.forEach(blur => blur.addEventListener('animationend', removeAnimation));
 function addAnimation(e){
   this.classList.add('animated','tada');
 };
@@ -73,24 +70,22 @@ function mouseOff() {
   if(window.innerWidth > 768){
   displays[slideIndex-1].style.display = "none";
 }}
-var j;
+
 
 //slideShow
-function setval(varval)
-{
+function setval(varval){
 	slideIndex = varval;
   slideChange();
 }
-
-const slideDiv = document.querySelector('.imageHover');
-slideDiv.addEventListener('mouseenter', mouseOn);
-slideDiv.addEventListener('mouseleave', mouseOff);
-
+var timeoutHandle = window.setTimeout(carousel, timeout);
+var slideDiv = document.getElementsByClassName("sliderImg");
+var slideHover = document.getElementsByClassName("txtOverlay");
 var x = document.getElementsByClassName("mySlides");
 var displays = document.getElementsByClassName("none");
 var slideIndex = 0;
-carousel();
 var timeout = 10000;
+var j;
+carousel();
 
 function carousel() {
     slideIndex++;
@@ -104,5 +99,8 @@ function slideChange() {
     }
   x[slideIndex-1].style.display = "block";
   timeoutHandle = window.setTimeout(carousel, timeout);
+  slideDiv[slideIndex-1].addEventListener('mouseenter', mouseOn);
+  slideDiv[slideIndex-1].addEventListener('mouseleave', mouseOff);
+  slideHover[slideIndex-1].addEventListener('mouseenter', mouseOn);
+  slideHover[slideIndex-1].addEventListener('mouseleave', mouseOff);
 }
-var timeoutHandle = window.setTimeout(carousel, timeout);

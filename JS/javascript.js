@@ -62,15 +62,6 @@ function carouselText() {
 }
 
 
-function mouseOn() {
-    if(window.innerWidth > 768){
-  displays[slideIndex-1].style.display = "block";
-}}
-function mouseOff() {
-  if(window.innerWidth > 768){
-  displays[slideIndex-1].style.display = "none";
-}}
-
 
 //slideShow
 function setval(varval){
@@ -99,8 +90,4 @@ function slideChange() {
     }
   x[slideIndex-1].style.display = "block";
   timeoutHandle = window.setTimeout(carousel, timeout);
-  slideDiv[slideIndex-1].addEventListener('mouseenter', mouseOn);
-  slideDiv[slideIndex-1].addEventListener('mouseleave', mouseOff);
-  slideHover[slideIndex-1].addEventListener('mouseenter', mouseOn);
-  slideHover[slideIndex-1].addEventListener('mouseleave', mouseOff);
 }

@@ -69,7 +69,6 @@ function setval(varval){
   slideChange();
 }
 var timeoutHandle = window.setTimeout(carousel, timeout);
-var slideDiv = document.getElementsByClassName("sliderImg");
 var slideHover = document.getElementsByClassName("txtOverlay");
 var x = document.getElementsByClassName("mySlides");
 var displays = document.getElementsByClassName("none");

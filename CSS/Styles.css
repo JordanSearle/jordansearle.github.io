@@ -161,6 +161,7 @@
     grid-column: 2 / span 8;
     grid-row: 2;
   }
+  .gridSectionRight h2{margin-bottom: 20px;}
   .twitterBorder{
     width: 100%;
     height: 492px;
@@ -287,8 +288,7 @@
     font-family: 'Raleway', sans-serif;
   }
   .socialGridRight p{
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
   }
   .orange{color: #FF9516;-webkit-text-stroke: 1px rgba(0,0,0,0.5);}
   .blue{color: #0048E7;-webkit-text-stroke: 1px rgba(0,0,0,0.5);}
@@ -424,8 +424,7 @@
   display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    height: auto;
+    width: auto;
 }
 header a:hover{
   color: white;
@@ -470,7 +469,7 @@ border-top: 2px solid rgba(0,0,0,0.5);
 border-style: none;
 }
 .socialList h1{font-size: 2em;}
-.mySlides {display:none; position: relative;}
+.mySlides {position: relative;}
 .blur{filter: blur(2px);}
 .blur:hover{filter: blur(0px);}
 .none img{
@@ -495,16 +494,16 @@ border-style: none;
     position: absolute;
     bottom: 0px;
     padding: 10px 0 10px 0;
-    width: 80%;
-    right: 10%;
+    left: 25%;
     background-color: rgba(0,0,0,0.6);
     border-top: 1px solid rgba(255,255,255,0.4);
     color: white;
     height: auto;
+    width: auto;
     display:table;
-    vertical-align:middle;
-    text-align:center;
+    align-items: center;
 }
+.sliderImg{height: 600px;}
 }
 /*Animations*/
 .line-1{

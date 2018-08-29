@@ -33,7 +33,7 @@ img{
 
 }
 i{
-     color: rgba(255,255,255,.5);
+     color: rgba(255,255,255,1);
 }
 h2{
   margin: 0
@@ -52,8 +52,8 @@ p{
   padding: 0;
 }
 .footerBar{
-  background-color: #373a3e;
-  color: rgba(255,255,255,.5);
+  background-color: #52b86a;
+  color: rgba(255,255,255,1);
   padding-top: 5px;
 
 }

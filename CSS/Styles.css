@@ -537,8 +537,8 @@ border-style: none;
   transform: translateY(-50%);
 }
 .anim-typewriter2{
-  animation: typing 2s steps(14) 1s 1 normal both,
-             blinkTextCursor 500ms steps(14) infinite normal;
+  animation: typing 2s steps(13) 1s 1 normal both,
+             blinkTextCursor 500ms steps(13) infinite normal;
 }
 .line-3{
   width: 50px;
@@ -550,6 +550,6 @@ border-style: none;
   transform: translateY(-50%);
 }
 .anim-typewriter3{
-  animation: typing 0.8s steps(5) 1s 1 normal both,
-             blinkTextCursor 500ms steps(5) infinite normal;
+  animation: typing 1s steps(4) 1s 1 normal both,
+             blinkTextCursor 500ms steps(4) infinite normal;
 }

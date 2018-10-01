@@ -6,115 +6,114 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Rubik" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS\colors.css">
   <link href="CSS/Styles.css" rel="stylesheet">
   <title>Jordan Searle</title> <!--Title-->
 </head>
-<body class="animated fadeIn">
-  <header >
-    <div class="gridHeader" >
-    <div class="headerColumn col-6">
-      <a>Jordan Searle</a>
-    </div>
-      <div class="headerColumn head1 alignCenter headShown"><a href="#projects">PROJECTS</a></div>
-      <div class="headerColumn head2 alignCenter headShown"><a href="#about">ABOUT</a></div>
-      <div class="headerColumn head3 alignCenter headShown"><a href="#social">SOCIAL</a></div>
-      <div class="mobileDropdown" onclick="mobileDropDown()"><a><i class="fas fa-bars"></i></a></div>
-    </div>
-  </header>
-  <section> <!--Project images-->
-    <div class="bodyElements bodyGrid anchor" id="projects">
-<div class="gridSectionRight e6e6e6 imageHover">
-    <div class="mySlides animated bounceInLeft"><img class="sliderImg"src="Assets/Image1.jpeg">
-      <div class="txtOverlay none"><img src="Assets/Image1.jpeg"><a href="#" onclick="setval(2)"><img class="blur" src="Assets/Picture2.png"></a>
-      <a href="#" onclick="setval(3)"><img class="blur" src="Assets/Mockup.png"></a></div>
-    </div>
-    <div class="mySlides animated bounceInLeft"><a href="https://jordansearle97.wordpress.com/" target="_blank"><img class="sliderImg"src="Assets/Picture2.png"></a>
-
-      <div class="txtOverlay none"><a href="#" onclick="setval(1)"><img class="blur" src="Assets/Image1.jpeg"></a><img src="Assets/Picture2.png">
-        <a href="#" onclick="setval(3)"><img class="blur" src="Assets/Mockup.png"></a></div>
-
-      </div>
-    <div class="mySlides  animated bounceInLeft"><img class="sliderImg"src="Assets/Mockup.png">
-      <div class="txtOverlay none"><a href="#" onclick="setval(1)"><img class="blur" src="Assets/Image1.jpeg"></a><a href="#" onclick="setval(2)"><img class="blur" src="Assets/Picture2.png"></a>
-        <img src="Assets/Mockup.png"></div>
-    </div>
-  </section>
-  <section class="bodySection eee" id="about"> <!--About Me-->
-    <div class="sectionGrid">
-      <div class="spacerTop">
-      </div>
-      <div class="bodyElements gridSectionLeft">
-      <img src="Assets/Profile.jpg" >
-    </div>
-    <div class="bodyElements gridSectionRight" id="insert">
-    <h2>My Name Is Jordan and I</h2>
-    <h3><p class="typewriter line-1 anim-typewriter">Front End Develop</p>
-      <p class="typewriter line-2 anim-typewriter2">Build Systems</p>
-      <p class="typewriter line-3 anim-typewriter3">Code</p></h3>
-
-    </div>
-    <div class="spacertop"></div>
-    <div class="aboutBottom">
-        <ul>
-          <li><i class="fab fa-html5 orange"></i></li>
-          <li><i class="fas fa-code"></i></li>
-          <li><i class="fab fa-css3-alt blue"></i></li>
-        </ul>
-    </div>
-    </div>
-  </section>
-  <section class="bodySection anchor e6e6e6"id="social"> <!--social Media-->
-    <div class="sectionGrid">
-      <div class="spacerTop">
-      </div>
-      <div class="socialGridLeft">
-        <div class="twitterBorder">
-          <h1><a href="https://twitter.com/Kernow_jordan" target="_blank"><i class="fab fa-twitter"></i> Kernow_Jordan</a></h1>
-        <div id="myTwitter">
-      </div>
-      </div>
-    </div>
-    <div class="socialGridRight">
-
-      <h1>ABOUT ME</h1>
-      <P>Always had a passion for web development, started at Plymouth University 2017, currently completing the first year.
-         I have experience with JavaScript, CSS, HTML and several Programming Languages. If you would like anymore information then please contact me!
-       </P>
-    <form action="https://formspree.io/jordan.searle-3@students.plymouth.ac.uk" method="POST">
-        <div>
-          <input class="form-control" id="name" type="text" placeholder="Name" required="required">
-        </div>
-        <div>
-            <input class="form-control" id="email" type="email" placeholder="Email Address" required="required">
-        </div>
-        <div>
-            <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"></textarea>
-        </div>
-        <div>
-          <button  class="form-control btn-primay" type="submit"><h4>SEND</h4></button>
-        </div>
-      </form>
-    </div>
-<div class="spacerBottom">
-    </div>
-    </div>
-  </section>
-  <div class="social">
-    <div class="socialList">
-    <ul>
-        <li class="link"><a target="_blank" href="https://github.com/JordanSearle"><h1><i class="fab fa-github-square"></i></h1></a></li>
-        <li class="link"><a target="_blank" href="https://twitter.com/Kernow_jordan"><h1><i class="fab fa-twitter-square"></i></h1></a></li>
-        <li class="link"><a target="_blank" href="https://www.linkedin.com/in/jordansearle97/"><h1><i class="fab fa-linkedin"></i></i></h1></a></li>
+<body class="animated fadeIn"><!--NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <a class="navbar-brand" href="index.html"><button type="button" class="btn btn-outline-light btn-lg">JORDAN SEARLE</button></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto flex-nowrap">
+      <li class="nav-item active">
+        <a href="index.html"><button type="button" class="btn btn-outline-light btn-lg m-1">HOME</button><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a href="About.html"><button type="button" class="btn btn-outline-light btn-lg m-1" href="About.html">ABOUT</button></a>
+      </li>
+      <li class="nav-item">
+        <a href="#"><button type="button" class="btn btn-outline-light btn-lg m-1">DARK</button></a>
+      </li>
     </ul>
   </div>
+</nav>
+  <section> <!--Project images-->
+    <div class="">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 slider" src="https://i.imgur.com/aseD8ux.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 slider" src="https://i.imgur.com/bokNhKh.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 slider" src="https://i.imgur.com/9lqYypa.jpg" alt="Third slide">
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col order-1 order-lg-0 mb-3 mt-3">
+          <div class="card shadow-lg rounded ">
+            <img class="card-img-top shadow-sm" src="Assets\githubSS.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">CHECK OUT MY GITHUB</h5>
+              <p class="card-text">I use Github to help with collaboration as well as version control of my Projects, check out my past and current Projects</p>
+              <a href="https://github.com/JordanSearle" target="_blank" class="btn btn-primary">GO TO GITHUB</a>
+            </div>
+          </div>
+        </div>
+        <div class="col order-0 order-lg-1 mb-3 mt-3">
+          <div class="card shadow-lg rounded ">
+            <div class="box">
+                <div class="img">
+                    <img src="Assets\Profile.jpg">
+                </div>
+                <h2>Jordan Searle<br><span>University of Plymouth Student <br></span></h2>
+                <p> My name is Jordan Searle and I have a passion Web Development<br>Stage 2 University of Plymouth Student<br>Tech Geek</p>
+                <span>
+                    <ul>
+                        <li><a href="https://twitter.com/Kernow_jordan"target="_blank"><i class="fab fa-twitter"aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/JordanSearle"target="_blank"><i class="fab fa-github"aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jordansearle97/" target="_blank"><i class="fab fa-linkedin-in"aria-hidden="true"></i></a></li>
+                    </ul>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="col order-2 order-lg-2  mb-3 mt-3">
+            <div class="card shadow-lg rounded ">
+              <img class="card-img-top shadow-sm" src="Assets\blogSS.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">CHECK OUT MY BLOG</h5>
+                <p class="card-text">I have a blog, I occasionally use it to keep a journal of my on-going projects and to share what I am working on</p>
+                <a href="https://jordansearle97.wordpress.com/" target="_blank" class="btn btn-primary">GO TO WORDPRESS</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <div>
       <h4>@ Jordan Searle 2018</h4>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="JS/tweetFetcher.js"></script>
   <script type="text/javascript" src="JS/javascript.js"></script>
 </body>
 </html>

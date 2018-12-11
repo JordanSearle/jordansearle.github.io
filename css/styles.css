@@ -1,0 +1,180 @@
+  body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #eee;
+
+  }
+  p{
+    font-family: 'Raleway', sans-serif;
+  }
+  footer{
+    background-color: #252a30;
+    color: darkGrey;
+    text-align: center;
+    vertical-align: text-bottom;
+    margin-top: 0;
+    padding: 20px;
+  }
+  .centered{text-align:center;}
+  .darkGrey{background-color: darkGrey;}
+  h1{
+    margin: 0;
+  }
+  .btn-outline-light{
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+  .bodyOverflow{
+    overflow-y: hidden;
+  }
+  nav .container{
+    max-width: 1300px;
+  }
+  .navbar{
+    top: 0px;
+    position: sticky;
+    z-index: 15;
+  }
+.card-img-top{object-fit:cover;height: 150px;clip-path: polygon(0 0, 0 50%, 100% 100%, 100% 0);}
+.slider{width: auto;height: 29vh;object-fit: cover;}
+.carousel-control-prev-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");}
+.carousel-control-next-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");}
+.carousel-indicators li{background-color: rgba(0,0,0,.25);}.carousel-indicators .active{background-color: rgba(0,0,0,.50);}
+
+.faster{
+  animation-duration: 0.50s;
+}
+.cardProf {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: black;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 330px;
+  width: 100%;
+  color: black;
+  text-align: left;
+  line-height: 1.4em;
+  margin: 0 auto;
+  display: inline-block;
+}
+.cardProf img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.cardProf figcaption {
+  width: 100%;
+  background-color: white;
+  padding: 25px;
+  position: relative;
+}
+.cardProf figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent white;
+}
+.cardProf figcaption a {
+  border: 1px solid #ffffff;
+  color: black;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.cardProf .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 120px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.cardProf .follow {
+  margin-right: 6%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.cardProf h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+#myTwitter{overflow-y:scroll; overflow-x:hidden;overflow-wrap:break-word ;height: 501px; text-align: center;}#myTwitter ul{list-style: none; padding: 10px;} #myTwitter li{box-shadow:inset 0 0 5px rgba(0,0,0,0.5);padding: 8px;margin-bottom: 3px;} #myTwitter .user img{border-radius: 50%;}
+.skillBar{color: white;height: 30px;position: relative;width: 100%;background-color: #c3f7e0;}
+.html{position: absolute;height: 100%;background-color: #17b66d; width: 80%; top: 0; left: 0;box-shadow: 4px 0px 3px 0px rgba(0,0,0,0.5);}
+.css{position: absolute;height: 100%;background-color: #17b66d; width: 85%; top: 0; left: 0;box-shadow: 4px 0px 3px 0px rgba(0,0,0,0.5);}
+.js{position: absolute;height: 100%;background-color: #17b66d; width: 60%; top: 0; left: 0;box-shadow: 4px 0px 3px 0px rgba(0,0,0,0.5);}
+.c{position: absolute;height: 100%;background-color: #17b66d; width: 70%; top: 0; left: 0;box-shadow: 4px 0px 3px 0px rgba(0,0,0,0.5);}
+.ps{position: absolute;height: 100%;background-color: #17b66d; width: 85%; top: 0; left: 0;box-shadow: 4px 0px 3px 0px rgba(0,0,0,0.5);}
+.skillName{position: absolute;height: 100%;background-color: #0c5b37; width: 120px; top: 0; left: 0; padding-left: 10px; padding-right: 10px;box-shadow: 4px 0px 3px 0px rgba(0,0,0,0.7);}.skillName p{padding: 3px 5px 2px;}
+.skill{padding: 3px 5px 2px; color: black;}
+.box{background-color: white; height: 100%;position: relative; min-height:501px;text-align:center;}
+.boxCenter{height: auto; margin: auto; width: 90%; position: absolute; left: 0; right: 0;}.parent{height: 210px;}
+.temp{text-align: center;}
+.showCase {
+  height: 250.5px;
+  width: 100%;
+  max-width: 250px;margin: 10px;
+}
+.skillBG {background-image: url("../Assets/SBG.jpg");background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.typewrite{font-family: 'VT323', monospace;text-decoration: none;color: #000;}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-box-front img{
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #c8cace;
+  color: black;
+  transform: rotateY(180deg);
+}

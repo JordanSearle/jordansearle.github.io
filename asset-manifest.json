@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.f142d664.css",
-    "main.js": "/static/js/main.e4b2fa1f.js",
+    "main.css": "/static/css/main.728b3fcd.css",
+    "main.js": "/static/js/main.4cf106dc.js",
     "static/js/626.683c5a7c.chunk.js": "/static/js/626.683c5a7c.chunk.js",
     "static/media/dust_2_bg.jpg": "/static/media/dust_2_bg.f39f47893165d82bc2b8.jpg",
+    "static/media/inferno_bg.jpg": "/static/media/inferno_bg.62604355373589085d09.jpg",
     "static/media/t_asset.png": "/static/media/t_asset.a6227607c305d6bbe96e.png",
     "static/media/pdark.ttf": "/static/media/pdark.7da36e4a269ced892549.ttf",
+    "static/media/lurkle_picture.png": "/static/media/lurkle_picture.29aacbe09064fe8f6eaa.png",
+    "static/media/ham_picture.png": "/static/media/ham_picture.2522dfdc2879bea1ac71.png",
+    "static/media/cornish_picture.png": "/static/media/cornish_picture.934b2090ca35d6650818.png",
+    "static/media/eggman_picture.png": "/static/media/eggman_picture.93b28780dec7dfcbe3a2.png",
+    "static/media/pugmasters_logo.svg": "/static/media/pugmasters_logo.5c273a8c0afb914de4992921457ffeb4.svg",
     "index.html": "/index.html",
-    "main.f142d664.css.map": "/static/css/main.f142d664.css.map",
-    "main.e4b2fa1f.js.map": "/static/js/main.e4b2fa1f.js.map",
+    "main.728b3fcd.css.map": "/static/css/main.728b3fcd.css.map",
+    "main.4cf106dc.js.map": "/static/js/main.4cf106dc.js.map",
     "626.683c5a7c.chunk.js.map": "/static/js/626.683c5a7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f142d664.css",
-    "static/js/main.e4b2fa1f.js"
+    "static/css/main.728b3fcd.css",
+    "static/js/main.4cf106dc.js"
   ]
 }
